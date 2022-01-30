@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".iu.administrator.agregarmedico.AgregarMedicoFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0100C1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tvTitulo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/registrar_medico"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilFullName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:hint="@string/nombre_completo">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:digits="aábcdeéfghiíjklmnñoópqrstuúvwxyz AÁBCDEÉFGHIÍJKLMNÑOÓPQRSTUÚVWXYZ"
+                    android:inputType="textCapWords"
+                    android:paddingHorizontal="20dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilProfessionalCode"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="@string/codigo_profesional"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etProfessionalCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:paddingHorizontal="20dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilSpeciality"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:hint="@string/especialidad"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etSpeciality"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:paddingHorizontal="20dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilYearsOfExperience"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:hint="@string/anios_de_experiencia"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+                app:counterMaxLength="4">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etYearsOfExperience"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:paddingHorizontal="20dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tilOffice"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:hint="@string/consultorio"
+                app:boxBackgroundMode="outline"
+                app:boxStrokeColor="@color/mtrl_textinput_default_box_stroke_color"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etOffice"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:maxLines="1"
+                    android:paddingHorizontal="20dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="10dp"
+                    android:text="@string/atiende_a_domicilio_pregunta"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/cbServesAtHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCreateDoctor"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginHorizontal="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:backgroundTint="#0100C1"
+                android:text="@string/registrar_medico" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

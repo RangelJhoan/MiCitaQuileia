@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_administrador"
+    app:startDestination="@id/menuAdministradorFragment">
+
+    <fragment
+        android:id="@+id/agregarMedicoFragment"
+        android:name="com.example.micitaquileia.iu.administrator.agregarmedico.AgregarMedicoFragment"
+        android:label="fragment_agregar_medico"
+        tools:layout="@layout/fragment_agregar_medico" />
+    <fragment
+        android:id="@+id/menuAdministradorFragment"
+        android:name="com.example.micitaquileia.iu.administrator.menuadministrador.MenuAdministradorFragment"
+        android:label="fragment_menu_administrador"
+        tools:layout="@layout/fragment_menu_administrador" >
+        <action
+            android:id="@+id/action_menuAdministradorFragment_to_consultarMedicosFragment"
+            app:destination="@id/consultarMedicosFragment" />
+        <action
+            android:id="@+id/action_menuAdministradorFragment_to_consultarPacientesFragment"
+            app:destination="@id/consultarPacientesFragment" />
+        <action
+            android:id="@+id/action_menuAdministradorFragment_to_agregarMedicoFragment"
+            app:destination="@id/agregarMedicoFragment" />
+        <action
+            android:id="@+id/action_menuAdministradorFragment_to_agregarPacienteFragment"
+            app:destination="@id/agregarPacienteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/consultarMedicosFragment"
+        android:name="com.example.micitaquileia.iu.administrator.consultdoctors.ConsultDoctorsFragment"
+        android:label="fragment_consultar_medicos"
+        tools:layout="@layout/fragment_consult_doctors" />
+    <fragment
+        android:id="@+id/agregarPacienteFragment"
+        android:name="com.example.micitaquileia.iu.administrator.agregarpaciente.AgregarPacienteFragment"
+        android:label="fragment_agregar_paciente"
+        tools:layout="@layout/fragment_agregar_paciente" />
+    <fragment
+        android:id="@+id/consultarPacientesFragment"
+        android:name="com.example.micitaquileia.iu.administrator.consultpatients.ConsultPatientsFragment"
+        android:label="fragment_consultar_pacientes"
+        tools:layout="@layout/fragment_consult_patients" />
+</navigation>

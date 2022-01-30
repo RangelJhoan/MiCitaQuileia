@@ -1,3 +1,26 @@
 <resources>
-    <string name="app_name">MiCitaQuileia</string>
+    <string name="app_name">Mi Cita Quileia</string>
+    <string name="menu_principal">Menú Principal</string>
+    <string name="titulo">Título</string>
+    <string name="lista_de_medicos">Lista de médicos</string>
+    <string name="nombre_completo">Nombre completo</string>
+    <string name="codigo_profesional">Código profesional</string>
+    <string name="especialidad">Especialidad</string>
+    <string name="nombre">Nombre</string>
+    <string name="titulo_codigo_profesional">Código profesional:</string>
+    <string name="titulo_especialidad">Especialidad:</string>
+    <string name="registrar_medico">Registrar Médico</string>
+    <string name="anios_de_experiencia">Años de experiencia</string>
+    <string name="consultorio">Consultorio</string>
+    <string name="atiende_a_domicilio_pregunta">¿Atiende a domicilio?</string>
+    <string name="registrar_paciente">Registrar Paciente</string>
+    <string name="nombre_dp">Nombre:</string>
+    <string name="apellido">Apellido</string>
+    <string name="fecha_de_nacimiento">Fecha de nacimiento</string>
+    <string name="identificacion">Identificación</string>
+    <string name="esta_en_tratamiento_pregunta">¿Está en tratamiento?</string>
+    <string name="lista_de_pacientes">Lista de pacientes</string>
+    <string name="fecha_de_nacimiento_dp">Fecha de nacimiento:</string>
+    <string name="identificacion_dp">Identificación:</string>
+    <string name="apellido_dp">Apellido:</string>
 </resources>
